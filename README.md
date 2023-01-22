@@ -20,7 +20,9 @@ Ligne), les signaux utiles sont de fréquences élevées. Le réseau électrique
 cependant sa propre fréquence (50 hz). Le boiter de réception doit donc pouvoir 
 filtrer les basses fréquences pour s'attaquer ensuite à la démodulation du signal utile.
 Schématiquement :
+
 <img width="227" alt="Screenshot 2023-01-22 231718" src="https://user-images.githubusercontent.com/87017143/213946683-1878ef96-a156-41be-b6e5-190498338af3.png">
+
 Mathématiquement, un tel filtre fournit un signal de sortie en convoluant le signal 
 d'entrée par la réponse temporelle du filtre :
 y(t) = x(t) * h(t)
