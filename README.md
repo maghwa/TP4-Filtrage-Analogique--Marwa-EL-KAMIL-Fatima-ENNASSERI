@@ -71,3 +71,4 @@ signal.
  
  <img width="398" alt="Screenshot 2023-01-23 010845" src="https://user-images.githubusercontent.com/87017143/213948094-e42294f3-deaf-4633-add0-9eb073ac7710.png">
 
+-En tracant 20.log(|H(f)|) pour différentes pulsations de coupure wc, on observe qu'il y a une coupure de fréquence à la pulsation de coupure choisie. Cela signifie que les fréquences inférieures à la pulsation de coupure sont transmises avec un gain élevé tandis que les fréquences supérieures à la pulsation de coupure sont atténuées.
