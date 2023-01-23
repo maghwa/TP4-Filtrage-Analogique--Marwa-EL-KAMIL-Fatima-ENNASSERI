@@ -68,5 +68,6 @@ signal.
 <img width="331" alt="Screenshot 2023-01-23 011258" src="https://user-images.githubusercontent.com/87017143/213948048-8907a672-b764-4027-ba9c-7d0be73aff5f.png">
  
  -L'affichage:
+ 
  <img width="398" alt="Screenshot 2023-01-23 010845" src="https://user-images.githubusercontent.com/87017143/213948094-e42294f3-deaf-4633-add0-9eb073ac7710.png">
 
