@@ -28,9 +28,45 @@ d'entrée par la réponse temporelle du filtre :
 y(t) = x(t) * h(t)
 ### Notre manipulation
 Nous souhaitons appliquer un filtre passe-haut pour supprimer la composante à 50Hz. Soit notre signal d'entrée :
+
 x(t) = sin(2.pi.f1.t) + sin(2.pi.f2.t) + sin(2.pi.f3.t)
 Avec f1 = 500 Hz,
 f2 = 400 Hz 
 et f3 = 50 Hz
  #### 1.2- Définition de signal x(t) et Traçage de signal x(t) et sa transformé de Fourrier:
  
+ Le code:
+ 
+<img width="308" alt="Screenshot 2023-01-22 233550" src="https://user-images.githubusercontent.com/87017143/213946889-2b1e8574-2e50-4acf-ac2a-c2ae096f98b9.png">
+ 
+ L'affichage:
+ 
+ <img width="810" alt="Screenshot 2023-01-22 233523" src="https://user-images.githubusercontent.com/87017143/213946924-a1ff48c9-2eff-4cf5-9dd4-fe370b81895e.png">
+La fonction H(f) (transmittance complexe) du filtre passe haut de premier ordre est 
+donnée par :
+H(f) = (K.j.w/wc) / (1 + j. w/wc)
+Avec K le gain du signal, w la pulsation et wc la pulsation de coupure.
+On se propose de tracer le diagramme de Bode de ce filtre et de l'appliquer au 
+signal.
+#### 1. Traçage de module de la fonction H(f) avec K=1 et wc = 50 rad/s:
+
+-Le code:
+
+<img width="298" alt="Screenshot 2023-01-23 003622" src="https://user-images.githubusercontent.com/87017143/213947014-995a64e0-657e-4666-a422-1f3f1da351bd.png">
+
+ -L'affichage en utilisant plot:
+ 
+<img width="398" alt="Screenshot 2023-01-23 003212" src="https://user-images.githubusercontent.com/87017143/213947146-4b3b289a-46d1-44f5-9c8a-cf6506c8da63.png">
+
+-L'affichage en utilisant semilogx:
+
+<img width="371" alt="Screenshot 2023-01-23 003448" src="https://user-images.githubusercontent.com/87017143/213947273-f588594b-947b-4b71-8c2b-cf058c352975.png">
+### 2. Traçage 20.log(|H(f)|) pour différentes pulsations de coupure wc:
+
+-Le code:
+
+<img width="331" alt="Screenshot 2023-01-23 011258" src="https://user-images.githubusercontent.com/87017143/213948048-8907a672-b764-4027-ba9c-7d0be73aff5f.png">
+ 
+ -L'affichage:
+ <img width="398" alt="Screenshot 2023-01-23 010845" src="https://user-images.githubusercontent.com/87017143/213948094-e42294f3-deaf-4633-add0-9eb073ac7710.png">
+
