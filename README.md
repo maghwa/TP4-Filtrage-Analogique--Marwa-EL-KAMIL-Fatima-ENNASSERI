@@ -8,7 +8,7 @@
 ### Objectifs:
 - Appliquer un filtre réel pour supprimer les composantes indésirables d’un signal. 
 - Améliorer la qualité de filtrage en augmentant l’ordre du filtre.
-### Diagramme de Bode:
+### Introduction-Diagramme de Bode:
 
 Le diagramme de Bode permet de représenter sous forme graphique le gain en dB (G=20 log et 
 la phase ( d'une fonction de transfert, en fonction de w. Il permet de voir le 
@@ -62,7 +62,7 @@ signal.
 
 <img width="371" alt="Screenshot 2023-01-23 003448" src="https://user-images.githubusercontent.com/87017143/213947273-f588594b-947b-4b71-8c2b-cf058c352975.png">
 
-### 2. Traçage 20.log(|H(f)|) pour différentes pulsations de coupure wc:
+#### 2. Traçage 20.log(|H(f)|) pour différentes pulsations de coupure wc:
 
 -Le code:
 
@@ -73,7 +73,7 @@ signal.
  <img width="398" alt="Screenshot 2023-01-23 010845" src="https://user-images.githubusercontent.com/87017143/213948094-e42294f3-deaf-4633-add0-9eb073ac7710.png">
 
 -En tracant 20.log(|H(f)|) pour différentes pulsations de coupure wc, on observe qu'il y a une coupure de fréquence à la pulsation de coupure choisie. Cela signifie que les fréquences inférieures à la pulsation de coupure sont transmises avec un gain élevé tandis que les fréquences supérieures à la pulsation de coupure sont atténuées.
-### 3. Le Choix de différentes fréquences de coupure :
+#### 3. Le Choix de différentes fréquences de coupure :
 En choisissant différentes fréquences de coupure et en appliquant le filtrage dans l'espace des fréquences, on observe que les fréquences inférieures à la fréquence de coupure sont transmises avec un gain élevé tandis que les fréquences supérieures à la fréquence de coupure sont atténuées.
 ###  application de  ce filtrage dans l'espace des fréquence:
 Le code:
@@ -85,6 +85,8 @@ Affichage:
 
 <img width="410" alt="Screenshot 2023-01-23 014119" src="https://user-images.githubusercontent.com/87017143/213949639-54c74178-693b-4ee7-9dc5-0ac5d635f94e.png">
 
-### 4.Le choix de wc optimal:
+#### 4.Le choix de wc optimal:
 Le choix de wc optimal dépend des besoins spécifiques du signal et de l'application. Il est important de choisir une fréquence de coupure qui sépare les fréquences souhaitées des fréquences non souhaitées.
+
+## 2.Dé-bruitage d'un signal sonore
 
