@@ -89,4 +89,13 @@ Affichage:
 Le choix de wc optimal dépend des besoins spécifiques du signal et de l'application. Il est important de choisir une fréquence de coupure qui sépare les fréquences souhaitées des fréquences non souhaitées.
 
 ## 2.Dé-bruitage d'un signal sonore
+Dans son petit studio du CROUS, un mauvais futur ingénieur a enregistré une 
+musique en « .wav » avec un très vieux micro. Le résultat est peu concluant, un bruit strident s'est ajouté à sa musique. Heureusement son voisin, expert en traitement du signal est là pour le secourir :
+« C'est un bruit très haute fréquence, il suffit de le supprimer. » dit-il sûr de lui.
+#### 1. une méthode pour supprimer ce bruit sur le signal
 
+<img width="408" alt="Screenshot 2023-01-27 100251" src="https://user-images.githubusercontent.com/87017143/215048448-e4b08fc2-0a20-47cd-8c7f-ab25008e08ec.png">
+
+On Observe  que dans le spectre suivant il y a une fréquence entre 4000 et 6000 d'amplitude 2 qui constitue le bruit, pour l'éiminer on doit appliquer un filtre passe bas qui nous permettra de diminuer l'intensité du bruit.
+
+==>Une méthode courante pour supprimer un bruit haute fréquence d'un signal est d'utiliser un filtre passe-bas. 
