@@ -99,3 +99,27 @@ musique en « .wav » avec un très vieux micro. Le résultat est peu concluant,
 On Observe  que dans le spectre suivant il y a une fréquence entre 4000 et 6000 d'amplitude 2 qui constitue le bruit, pour l'éiminer on doit appliquer un filtre passe bas qui nous permettra de diminuer l'intensité du bruit.
 
 ==>Une méthode courante pour supprimer un bruit haute fréquence d'un signal est d'utiliser un filtre passe-bas. 
+
+==>Lors de l'attenuation du bruit, on arrive pas à filtrer le signal avec une transmittance complexe d'ordre 1 sans affecter le signal.Par conséquent un filtre pass-bas de premier ordre n'est pas eeficace pour eliminer le bruit.Par suite, il faut opter pour un filtre d'ordre supérieur nommé un filtre "Butterworth" en augmentant le n:
+
+<img width="282" alt="Screenshot 2023-01-27 102332" src="https://user-images.githubusercontent.com/87017143/215052470-fe5fb6d9-a412-40e6-9442-4dfcb159876a.png">
+
+#### 2.Le paramètre K influence sur la rapidité de la transition entre la bande passante et la bande stop. Plus K est élevé plus la transition sera rapide.
+
+<img width="415" alt="Screenshot 2023-01-27 101920" src="https://user-images.githubusercontent.com/87017143/215054880-92d34b70-771e-4043-841e-5548be1ba0d5.png">
+
+
+<img width="412" alt="Screenshot 2023-01-27 101854" src="https://user-images.githubusercontent.com/87017143/215055047-fd886660-24ff-42d8-b7cf-f312ba6b72b6.png">
+
+on crée un filtre Butterworth d'ordre 100 qui est un type de filtre passe-bas qui utilise une fonction de transfert caractéristique de Butterworth pour atténuer les fréquences élevées au-dessus d'une fréquence de coupure spécifiée. L'ordre du filtre détermine la rapidité avec laquelle les fréquences élevées sont atténuées au-delà de la fréquence de coupure. Un ordre élevé signifie une atténuation plus rapide des fréquences élevées.
+
+<img width="386" alt="Screenshot 2023-01-27 104020" src="https://user-images.githubusercontent.com/87017143/215055374-1506f19c-8d6a-46c8-a3a0-5409cb2d46f7.png">
+ On remarque qu'on a pu filtrer la musique en eliminant le bruit,
+ (voir la figure ci-dessous) et et grâce à la commande Sound().
+ 
+<img width="410" alt="Screenshot 2023-01-27 105030" src="https://user-images.githubusercontent.com/87017143/215057582-fe1ac487-3f16-4cde-9cb0-e76c51449d78.png">
+
+le code:
+
+<img width="365" alt="Screenshot 2023-01-27 105147" src="https://user-images.githubusercontent.com/87017143/215057638-4c814a82-a536-4272-8474-14d1c8ab5021.png">
+
